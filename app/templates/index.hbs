@@ -2,3 +2,5 @@
   {{#each model.questions as |question|}}
   {{question-tile question=question}}
   {{/each}}
+
+  <h3>Publish a: {{new-question saveQuestion="saveQuestion" question=model}}</h3>

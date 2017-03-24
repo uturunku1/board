@@ -3,18 +3,18 @@
 <form>
   <div class="form-group">
     <label for="author">author</label>
-    {{input type="text" id="author" value="author"}}
+    {{input type="text" id="author" value=author}}
   </div>
   <div class="form-group">
-    <label for="question">Ask question</label>
-    {{input type="text" id="question" value="question"}}
+    <label for="content">Ask a question</label>
+    {{input type="text" id="content" value=content}}
   </div>
   <div class="form-group">
     <label for="notes">additional information(optional)</label>
-    {{input type="text" id="notes" value="notes"}}
+    {{input type="text" id="notes" value=notes}}
   </div>
   <button {{action 'saveQuestion'}}>Save</button>
 </form>
 {{else}}
-  <button {{action 'questionFormShow'}}>Question</button>
+  <button {{action 'questionFormShow'}}>New Question</button>
 {{/if}}
