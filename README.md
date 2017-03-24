@@ -28,16 +28,17 @@ You will need the following things properly installed on your computer.
 * do correspondent installation mentioned above inside of my board folder.
 * generate my two models: question, answer.
 * add attributes to models.
---question.js: author, content, notes, answers(hasMany).
---answer.js: author, content, question(belongsTo)
+  ** question.js: author, content, notes, answers(hasMany).
+  ** answer.js: author, content, question(belongsTo)
 * create project in Firebase and get API key.
 * modify environment.js based on firebase configuration.
 * create questions.json, hard code data for questions and answers.
+* import data json in Firebase and change 'rules' to 'true'.
 * generate my two ember routes: index and question.
- --Index template will include the component question-tile.hbs, which will help to display the questions and its authors.
- --index.js will findAll from model() and have save action.
- --Question template will display a particular question with additional information, update/delete the question and display the answers that belong to that question.
- --question.js will findRecord through question_id and will handle the actions for updating, saving and deleting question.
+  ** Index template will include the component question-tile.hbs, which will help to display the questions and its authors.
+  ** index.js will findAll from model() and have save action.
+  ** Question template will display a particular question with additional information, update/delete the question and display the answers that belong to that question.
+  ** question.js will findRecord through question_id and will handle the actions for updating, saving and deleting question.
 
 * generate components: question-tile, new-question, question-detail, update-question, answer-tile, new-answer.
 

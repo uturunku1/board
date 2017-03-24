@@ -1,5 +1,23 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<body>
+  <div class= "container">
+    <header class= "jumbotron">
+      <h1>Peruvian cuisine forum</h1>
+      <h3>An open space to answer all your questions about Peruvian food, from restaurants to recipes!</h3>
+    </header>
 
-{{outlet}}
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Home</a>
+      </div>
+    </div>
+    </nav>
+
+    {{outlet}}
+
+    <hr>
+    <footer>
+      Created by <a href="https://github.com/uturunku1">Stella Huayhuaca</a> 
+    </footer>
+  </div>
+</body>
