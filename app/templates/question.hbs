@@ -1,11 +1,11 @@
 
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
+
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+
+
 <h4>Publish a:{{new-answer saveAnswer="saveAnswer" question=model}}
 </h4>
-
-<ul>
-  {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
