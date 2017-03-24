@@ -42,7 +42,7 @@ You will need the following things properly installed on your computer.
 
   * new-question.hbs: form to add a new question in the form with save button.
 
-  * new-question.js:
+  * new-question.js: actions to show form and to save new question.
 
   - Question template will display a particular question with additional information, update/delete the question and display the answers that belong to that question.
 
