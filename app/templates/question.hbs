@@ -1,6 +1,9 @@
 
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
+{{update-question question=model update="update"}}
+
+<hr>
 
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
